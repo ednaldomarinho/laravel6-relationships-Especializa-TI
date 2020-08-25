@@ -37,9 +37,9 @@ class OneToOneController extends Controller
     public function oneToOneInsert()
     {
         $dataForm = [
-            'name' => 'Bélgica',
-            'latitude' => 78,
-            'longitude' => 87,
+            'name' => 'Uruguai',
+            'latitude' => 122,
+            'longitude' => 221,
         ];
 
         $country = Country::create($dataForm);

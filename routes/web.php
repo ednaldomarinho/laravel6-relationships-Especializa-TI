@@ -1,13 +1,16 @@
 <?php
 
-/*
-One to One
-*/
+/* One to One */
 
+Route::get('/one-to-one', 'OneToOneController@oneToOne')->name('onetoone');
+Route::get('/one-to-one-inverse', 'OneToOneController@oneToOneInverse')->name('onetooneinverse');
+Route::get('/one-to-one-insert', 'OneToOneController@oneToOneInsert')->name('onetooneinsert');
 
-Route::get('/one-to-one', 'OneToOneController@oneToOne');
-Route::get('/one-to-one-inverse', 'OneToOneController@oneToOneInverse');
-Route::get('/one-to-one-insert', 'OneToOneController@oneToOneInsert');
+/* One to Many */
+
+//Route::get('/one-to-many', 'OneToManyController@oneToMany')->name('onetomany');
+//Route::get('/one-to-many-inverse', 'OneToManyController@')->name('onetomanyinverse');
+//Route::get('/one-to-many-insert', 'OneToManyController@oneToManyInsert')->name('onetomanyinsert');
 
 Route::get('/', function () {
     return view('welcome');
