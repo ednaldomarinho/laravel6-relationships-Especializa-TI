@@ -88,7 +88,7 @@
                     <a href="{{route('onetoone')}}">One-To-One</a>
                     <a href="{{route('onetooneinverse')}}">One-To-One Inverse</a>
                     <a href="{{route('onetooneinsert')}}">One-To-One Insert</a>
-                    <a href="https://blog.laravel.com">Blog</a>
+                    <a href="{{route('onetomany')}}">One-To-Many</a>
                     <a href="https://nova.laravel.com">Nova</a>
                     <a href="https://forge.laravel.com">Forge</a>
                     <a href="https://vapor.laravel.com">Vapor</a>

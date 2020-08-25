@@ -8,7 +8,7 @@ Route::get('/one-to-one-insert', 'OneToOneController@oneToOneInsert')->name('one
 
 /* One to Many */
 
-//Route::get('/one-to-many', 'OneToManyController@oneToMany')->name('onetomany');
+Route::get('/one-to-many', 'OneToManyController@oneToMany')->name('onetomany');
 //Route::get('/one-to-many-inverse', 'OneToManyController@')->name('onetomanyinverse');
 //Route::get('/one-to-many-insert', 'OneToManyController@oneToManyInsert')->name('onetomanyinsert');
 
