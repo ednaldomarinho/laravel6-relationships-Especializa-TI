@@ -3,11 +3,12 @@
 namespace App\Http\Controllers;
 
 use App\Models\Country;
+use App\Models\Location;
 use Illuminate\Http\Request;
 
 class OneToOneController extends Controller
 {
-    public function OneToOne()
+    public function oneToOne()
     {
         //$country = Country::find(1);
         $country = Country::where('name', 'Brazil')->get()->first();
@@ -16,5 +17,20 @@ class OneToOneController extends Controller
         $location = $country->location()->get()->first();
         echo "<hr>Latitude: {$location->latitude}<br>";
         echo "Longitude: {$location->longitude}<hr><br>";
+    }
+
+    public function oneToOneInverse()
+    {
+        
+        $latitude = 456;
+        $longitude = 654;
+        
+        //$country = Country::find(1);
+        $location = Location::where('latitude', $latitude)
+                              ->where('longitude', $longitude)
+                              ->get()->first();
+        $country = $location->country;
+        //$country = $location->country()->get()->first();
+        echo $country->name;
     }
 }
