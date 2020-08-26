@@ -94,6 +94,6 @@ class OneToManyController extends Controller
             echo " {$city->name}, ";
         }
 
-        echo "<br>Total de cidades: {$cities->count()}";
+        echo "<br><b>Total de cidades:</b> {$cities->count()}";
     }
 }
