@@ -26,5 +26,5 @@ Route::get('/', function () {
 Route::get('/many-to-many', 'ManyToManyController@manyToMany')->name('manytomany');
 Route::get('/many-to-many-inverse', 'ManyToManyController@manyToManyInverse')->name('manytomanyinverse');
 // Route::get('/one-to-many-two', 'OneToManyController@oneToManyTwo')->name('onetomanytwo');
-// Route::get('/one-to-many-insert', 'OneToManyController@oneToManyInsert')->name('onetomanyinsert');
+Route::get('/many-to-many-insert', 'ManyToManyController@manyToManyInsert')->name('manytomanyinsert');
 // Route::get('/one-to-many-insert-two', 'OneToManyController@oneToManyInsertTwo')->name('onetomanyinserttwo');
