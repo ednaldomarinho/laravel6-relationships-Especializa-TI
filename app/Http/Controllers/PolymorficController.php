@@ -11,7 +11,30 @@ class PolymorficController extends Controller
 {
     public function polymorfic()
     {
-        echo "test";
+        
+        $city = City::where('name', 'Guarulhos')->get()->first();
+        echo "<b>{$city->name}</b><br>";
+        $comments = $city->comments()->get();
+
+        foreach ($comments as $comment) {
+           echo "{$comment->description}<hr>";
+        }
+
+        $state = State::where('name', 'Tocantins')->get()->first();
+        echo "<b>{$state->name}</b><br>";
+        $comments = $state->comments()->get();
+
+        foreach ($comments as $comment) {
+           echo "{$comment->description}<hr>";
+        }
+
+        $country = Country::where('name', 'Germany')->get()->first();
+        echo "<b>{$country->name}</b><br>";
+        $comments = $country->comments()->get();
+
+        foreach ($comments as $comment) {
+           echo "{$comment->description}<hr>";
+        }
     }
 
     public function polymorficInsert()
