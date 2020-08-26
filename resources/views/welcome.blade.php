@@ -89,10 +89,8 @@
                     <a href="{{route('onetooneinverse')}}">One-To-One Inverse</a>
                     <a href="{{route('onetooneinsert')}}">One-To-One Insert</a>
                     <a href="{{route('onetomany')}}">One-To-Many</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://vapor.laravel.com">Vapor</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
+                    <a href="{{route('onetomanytwo')}}">One-To-Many Two</a>
+                    <a href="{{route('onetomanyinsert')}}">One-To-Many Insert</a>
                 </div>
             </div>
         </div>
