@@ -32,7 +32,4 @@ Route::get('/many-to-many-insert', 'ManyToManyController@manyToManyInsert')->nam
 /* Relation Polymorfic */
 
 Route::get('/polymorfics', 'PolymorficController@polymorfic')->name('polymorfic');
-// Route::get('/many-to-many-inverse', 'ManyToManyController@manyToManyInverse')->name('manytomanyinverse');
-// // Route::get('/one-to-many-two', 'OneToManyController@oneToManyTwo')->name('onetomanytwo');
-// Route::get('/many-to-many-insert', 'ManyToManyController@manyToManyInsert')->name('manytomanyinsert');
-// // Route::get('/one-to-many-insert-two', 'OneToManyController@oneToManyInsertTwo')->name('onetomanyinserttwo');
+Route::get('/polymorfic-insert', 'PolymorficController@polymorficInsert')->name('polymorficinsert');
